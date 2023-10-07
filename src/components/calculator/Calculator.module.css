@@ -1,0 +1,8 @@
+.calculator_container {
+   width: 100%;
+   max-width: 400px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   padding: 1rem;
+   height: 500px;
+}

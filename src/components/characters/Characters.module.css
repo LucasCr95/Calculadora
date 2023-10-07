@@ -1,0 +1,6 @@
+.characters_container {
+   width: 100%;
+   border: 1px solid #ccc;
+   display: grid;
+   grid-template-columns: repeat(4, auto);
+}

@@ -1,5 +1,5 @@
 import styles from './Home.module.css';
-import Calculadora from './components/calculadora/Calculadora';
+import Calculadora from './components/calculator/Calculator';
 import Container from './components/container/Container';
 
 export default function Home() {
