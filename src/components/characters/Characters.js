@@ -10,10 +10,11 @@ export default function Characters() {
          {characters.length && 
          characters.map((character) => (
            <CharacterBtn 
-            value_btn = { character.valueOf() }
+             value_btn = { character }
+             key={ character }
            />
          ))
       }
-      </div>
+      </div> 
    )
 }
