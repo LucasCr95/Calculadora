@@ -1,12 +1,19 @@
+import { useState } from 'react'
 import Characters from '../characters/Characters'
 import DisplayCalc from '../display_calc/DisplayCalc'
 import styles from './Calculator.module.css'
 
 export default function Calculator() {
-   return(
+   const [ txtDisplay, setTxtDisplay ] = useState('')
+
+   function txt_num(value) {
+      setTxtDisplay(txtDisplay + value)
+   };
+
+   return (
       <div className={ styles.calculator_container }>
-         <DisplayCalc />
-         <Characters />
+         <DisplayCalc displayTxt={ txtDisplay } />
+         <Characters onChange={ txt_num }/>
       </div>
    )
 }
